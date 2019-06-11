@@ -1,21 +1,38 @@
 {
   "name": "techdegree-project-08",
   "version": "1.0.0",
+  "description": "SQL Library Manager App",
   "main": "app.js",
   "engines": {
     "node": "11.10.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielGibsonOrchid/techdegree-project-08.git"
+  },
+  "keywords": [],
+  "author": "Daniel Gibson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielGibsonOrchid/techdegree-project-08/issues"
+  },
+  "homepage": "https://github.com/DanielGibsonOrchid/techdegree-project-08#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
+    "method-override": "^3.0.0",
     "morgan": "~1.9.1",
-    "pug": "^2.0.3"
+    "pug": "^2.0.3",
+    "sequelize": "^5.8.6",
+    "sequelize-cli": "^5.4.0",
+    "sqlite3": "^4.0.8"
   }
 }

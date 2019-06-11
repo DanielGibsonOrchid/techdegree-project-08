@@ -1,0 +1,28 @@
+extends ../layout
+
+block content
+  h1= title
+  p
+    form(action="/books/search", method="GET" id="search-form")
+      input(placeholder="Search for a book...", type="text", name="search")
+      input(type="submit", value="Search")
+  p
+    a(class="button" href="/books/new") Create New Book
+
+  table
+    thead
+      tr
+        th Title
+        th Author
+        th Genre
+        th Year
+    tbody
+      each book in books
+        tr
+          td
+            a(href="/books/" + book.id)=book.title
+          td= book.author
+          td= book.genre
+          td= book.year
+  
+  div.paginationDiv
